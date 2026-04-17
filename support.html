@@ -5,91 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Mesquite Root</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mesquite Root</h1>
-        <p class="tagline">Support</p>
-        <p class="publisher">Published by Foxy Ninja Studios</p>
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h1>Mesquite Root</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="#faq">FAQ</a>
+                <a href="#troubleshooting">Troubleshooting</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="support">
-        <h2>What is Mesquite Root?</h2>
-        <p>Mesquite Root is developed and maintained by <strong>Foxy Ninja Studios</strong> in partnership with Mesquite.cc, LLC. The app is a positioning sensor that works with Mesquite.cc commercial motion capture systems, using your iPhone's ARKit capabilities to provide precise position and orientation tracking for full-body motion capture.</p>
+    <main class="support-page">
+        <!-- Hero Section -->
+        <section class="hero-small" style="background: linear-gradient(135deg, rgba(0, 122, 255, 0.8) 0%, rgba(88, 166, 255, 0.8) 100%), 
+                                           url('https://images.unsplash.com/photo-1516321318423-f06a6443504a?w=1400&q=80') center/cover;">
+            <div class="hero-content">
+                <h1>Support & Help</h1>
+                <p>Get answers to common questions and troubleshooting guides</p>
+            </div>
+        </section>
 
-        <h2>Requirements</h2>
-        <p><strong>Hardware Required:</strong> Mesquite Root requires Mesquite.cc commercial motion capture hardware to function. The app cannot be used standalone.</p>
-        <p><strong>iPhone Compatibility:</strong> iPhone 6S or later with ARKit support. iPhone 12 or newer recommended for optimal performance.</p>
-        <p><strong>iOS Version:</strong> iOS 14.0 or later</p>
+        <section class="support-content" id="faq">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-main">
+                        <h2>What is Mesquite Root?</h2>
+                        <p>Mesquite Root is developed and maintained by <strong>Foxy Ninja Studios</strong> in partnership with Mesquite.cc, LLC. The app is a professional positioning sensor that works with Mesquite Mocap dongles, using your phone's advanced sensors to provide precise position and orientation tracking for full-body motion capture on iOS and Android.</p>
 
-        <h2>How to Use</h2>
-        <ol>
-            <li><strong>Power on your Mesquite.cc dongle</strong> and wait for the WiFi network to appear</li>
-            <li><strong>Connect your iPhone to the Mesquite WiFi network</strong> (network name: MM-XX-XX-XX-XX-XX-XX, password: 123456789)</li>
-            <li><strong>Launch Mesquite Root app</strong> on your iPhone</li>
-            <li><strong>Mount your iPhone on your hip</strong> using the provided mounting clip</li>
-            <li><strong>Open mesquite.cc web application</strong> on your computer or tablet</li>
-            <li><strong>Select the commercial suit option</strong> in the web application</li>
-            <li><strong>Begin motion capture</strong> - Mesquite Root will automatically stream positioning data</li>
-        </ol>
+                        <h2>System Requirements</h2>
+                        <div class="requirements-box">
+                            <div class="req-item">
+                                <h3>🛠 Hardware</h3>
+                                <p>Mesquite Root requires a Mesquite Mocap dongle to function. The app cannot be used standalone.</p>
+                            </div>
+                            <div class="req-item">
+                                <h3>📱 iOS Requirements</h3>
+                                <p>iPhone 6S or later with iOS 14.0 or later. iPhone 12 or newer recommended for optimal performance.</p>
+                            </div>
+                            <div class="req-item">
+                                <h3>🤖 Android Requirements</h3>
+                                <p>Android 9.0 or later. Android 12 or newer recommended for optimal performance and sensor accuracy.</p>
+                            </div>
+                        </div>
 
-        <h2>Troubleshooting</h2>
+                        <h2>Getting Started - Quick Steps</h2>
+                        <div class="steps-container">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h3>Power On Dongle</h3>
+                                <p>Power on your Mesquite Mocap dongle and wait for the WiFi network to appear</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h3>Connect to WiFi</h3>
+                                <p>Connect your phone to the Mesquite WiFi network (network name: MM-XX-XX-XX-XX-XX-XX, password: 123456789)</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h3>Launch App</h3>
+                                <p>Launch Mesquite Root app on your iOS or Android phone</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <h3>Mount Phone</h3>
+                                <p>Mount your phone on your hip using the provided mounting clip</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">5</div>
+                                <h3>Start Web App</h3>
+                                <p>Open Mesquite Mocap web application on your computer or tablet</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">6</div>
+                                <h3>Configure Setup</h3>
+                                <p>Configure your motion capture setup in the web application</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">7</div>
+                                <h3>Begin Capture</h3>
+                                <p>Begin motion capture - Mesquite Root will automatically stream positioning data to your dongle</p>
+                            </div>
+                        </div>
 
-        <h3>App shows "DISCONNECTED"</h3>
-        <ul>
-            <li>Ensure your iPhone is connected to the Mesquite WiFi network (not cellular data)</li>
-            <li>Verify the WiFi network name matches the pattern MM-XX-XX-XX-XX-XX-XX</li>
-            <li>Check that the Mesquite dongle is powered on</li>
-            <li>Try disconnecting and reconnecting to the WiFi network</li>
-        </ul>
+                        <h2 id="troubleshooting">Troubleshooting</h2>
 
-        <h3>Poor tracking quality</h3>
-        <ul>
-            <li>Ensure good lighting conditions (ARKit requires visible features)</li>
-            <li>Avoid featureless environments (blank walls, uniform floors)</li>
-            <li>Keep iPhone camera lens clean</li>
-            <li>Reduce rapid movements during initial ARKit calibration</li>
-        </ul>
+                        <div class="troubleshooting-item">
+                            <h3>❌ App shows "DISCONNECTED"</h3>
+                            <ul class="solution-list">
+                                <li>Ensure your iPhone is connected to the Mesquite WiFi network (not cellular data)</li>
+                                <li>Verify the WiFi network name matches the pattern MM-XX-XX-XX-XX-XX-XX</li>
+                                <li>Check that the Mesquite dongle is powered on</li>
+                                <li>Try disconnecting and reconnecting to the WiFi network</li>
+                            </ul>
+                        </div>
 
-        <h3>Battery drains quickly</h3>
-        <ul>
-            <li>Lower screen brightness using the in-app slider</li>
-            <li>Enable Low Power Mode in iPhone settings before starting capture</li>
-            <li>Consider using an external battery pack for extended sessions</li>
-        </ul>
+                        <div class="troubleshooting-item">
+                            <h3>📊 Poor tracking quality</h3>
+                            <ul class="solution-list">
+                                <li>Ensure good lighting conditions for camera-based features</li>
+                                <li>Avoid featureless environments (blank walls, uniform floors)</li>
+                                <li>Keep phone camera lens and sensors clean</li>
+                                <li>Ensure phone has gyroscope and accelerometer sensors enabled</li>
+                                <li>Reduce rapid movements during initial calibration phase</li>
+                            </ul>
+                        </div>
 
-        <h2>Purchasing Hardware</h2>
-        <p>To purchase Mesquite.cc commercial motion capture hardware, visit:</p>
-        <p><a href="https://mesquite.cc"><strong>mesquite.cc</strong></a></p>
+                        <div class="troubleshooting-item">
+                            <h3>🔋 Battery drains quickly</h3>
+                            <ul class="solution-list">
+                                <li>Lower screen brightness using the in-app slider</li>
+                                <li>Enable Low Power Mode in iPhone settings before starting capture</li>
+                                <li>Consider using an external battery pack for extended sessions</li>
+                            </ul>
+                        </div>
+Getting Mesquite Mocap</h2>
+                        <p>To purchase Mesquite Mocap dongles and
+                        <p>To purchase Mesquite.cc commercial motion capture hardware, visit:</p>
+                        <div class="link-box">
+                            <a href="https://mesquite.cc" class="cta-button-secondary">Visit mesquite.cc →</a>
+                        </div>
+                    </div>
 
-        <h2>Technical Support</h2>
-        
-        <h3>App Support (Mesquite Root)</h3>
-        <p>For questions about the Mesquite Root app:</p>
-        <p>
-            <strong>Foxy Ninja Studios</strong><br>
-            Email: <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
-        </p>
+                    <aside class="sidebar">
+                        <div class="sidebar-box">
+                            <h3>Need Help?</h3>
+                            <p>Can't find the answer you're looking for?</p>
+                            <a href="mailto:contact@foxyninjastudios.com" class="cta-button-secondary">Contact Support</a>
+                        </div>
 
-        <h3>Hardware Support (Mesquite.cc)</h3>
-        <p>For questions about Mesquite.cc hardware and motion capture systems:</p>
-        <ul>
-            <li>Website: <a href="https://mesquite.cc">mesquite.cc</a></li>
-            <li>GitHub: <a href="https://github.com/Mesquite-Mocap">github.com/Mesquite-Mocap</a></li>
-        </ul>
+                        <div class="sidebar-box">
+                            <h3>📚 Resources</h3>
+                            <ul class="resource-links">
+                                <li><a href="https://mesquite.cc">Mesquite.cc</a></li>
+                                <li><a href="https://github.com/Mesquite-Mocap">GitHub Repository</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/privacy">Privacy Policy</a></li>
+                            </ul>
+                        </div>
 
-        <h2>About Mesquite</h2>
-        <p>Mesquite is an affordable, research-grade motion capture system used worldwide for biomechanics research, animation, sports analysis, and healthcare applications.</p>
-        <p><a href="https://mesquite.cc">Learn more at mesquite.cc →</a></p>
-    </main>
+                        <div class="sidebar-box">
+                            <h3>⚙️ Technical Support</h3>
+                            <p><strong>Foxy Ninja Studios</strong></p>
+                            <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
     <footer>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/privacy">Privacy Policy</a>
-            <a href="https://mesquite.cc">Mesquite.cc</a>
-        </nav>
-        <p>&copy; 2025 Foxy Ninja Studios. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Mesquite Root</h4>
+                <p>Professional motion capture positioning for iOS.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="/">Home</a>
+                    <a href="/support">Support</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="https://mesquite.cc">Mesquite.cc</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foxy Ninja Studios. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

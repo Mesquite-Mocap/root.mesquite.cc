@@ -5,85 +5,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Mesquite Root</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Mesquite Root</h1>
-        <p class="tagline">Privacy Policy</p>
-        <p class="publisher">Published by Foxy Ninja Studios</p>
+    <header class="navbar">
+        <div class="navbar-content">
+            <div class="logo">
+                <h1>Mesquite Root</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="/">Home</a>
+                <a href="#overview">Overview</a>
+                <a href="#data">Data</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="legal">
-        <p class="last-updated"><strong>Last Updated:</strong> January 2025</p>
+    <main class="privacy-page">
+        <!-- Hero Section -->
+        <section class="hero-small" style="background: linear-gradient(135deg, rgba(88, 166, 255, 0.8) 0%, rgba(34, 211, 238, 0.8) 100%), 
+                                           url('https://images.unsplash.com/photo-1516321318423-f06a6443504a?w=1400&q=80') center/cover;">
+            <div class="hero-content">
+                <h1>Privacy Policy</h1>
+                <p>Your privacy is important to us</p>
+            </div>
+        </section>
 
-        <h2>Overview</h2>
-        <p>Mesquite Root ("the App") is developed and maintained by Foxy Ninja Studios. The App is a positioning sensor application designed to work exclusively with Mesquite.cc motion capture hardware. This privacy policy explains how the App collects, uses, and protects your information.</p>
+        <section class="privacy-content">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-main">
+                        <div class="last-updated-banner">
+                            <p><strong>Last Updated:</strong> January 2025</p>
+                        </div>
 
-        <h2>Information Collection and Use</h2>
-        
-        <h3>Device Sensors</h3>
-        <p>The App accesses your iPhone's camera and motion sensors through Apple's ARKit framework to determine the device's position and orientation in 3D space. This sensor data is:</p>
-        <ul>
-            <li>Processed locally on your device</li>
-            <li>Transmitted only to your local Mesquite.cc hardware via WiFi</li>
-            <li>Never stored on the device</li>
-            <li>Never transmitted to external servers or third parties</li>
-            <li>Never used for any purpose other than position tracking</li>
-        </ul>
+                        <h2 id="overview">Overview</h2>
+                        <p>Mesquite Root ("the App") is developed and maintained by Foxy Ninja Studios. The App is a positioning sensor application available on iOS and Android, designed to work exclusively with Mesquite Mocap dongles. This privacy policy explains how the App collects, uses, and protects your information.</p>
 
-        <h3>Network Information</h3>
-        <p>The App scans for and connects to WiFi networks with names matching the pattern "MM-XX-XX-XX-XX-XX-XX" to identify Mesquite.cc hardware dongles. WiFi network information is:</p>
-        <ul>
-            <li>Used only to establish connection with Mesquite hardware</li>
-            <li>Never stored or transmitted to third parties</li>
-            <li>Deleted when the app is closed</li>
-        </ul>
+                        <h2 id="data">Information Collection and Use</h2>
+                        
+                        <div class="privacy-section">
+                            <h3>🎥 Device Sensors</h3>
+                            <p>The App accesses your phone's camera, gyroscope, accelerometer, and magnetometer to determine the device's position and orientation in 3D space. This sensor data is:</p>
+                            <ul class="data-list">
+                                <li>✓ Processed locally on your device</li>
+                                <li>✓ Transmitted only to your local Mesquite.cc hardware via WiFi</li>
+                                <li>✓ Never stored on the device</li>
+                                <li>✓ Never transmitted to external servers or third parties</li>
+                                <li>✓ Never used for any purpose other than position tracking</li>
+                            </ul>
+                        </div>
 
-        <h3>No Personal Information Collection</h3>
-        <p>The App does not collect, store, or transmit any personal information including:</p>
-        <ul>
-            <li>Names, email addresses, or contact information</li>
-            <li>Location data outside of the local tracking session</li>
-            <li>User accounts or profiles</li>
-            <li>Analytics or usage statistics</li>
-            <li>Advertising identifiers</li>
-        </ul>
+                        <div class="privacy-section">
+                            <h3>📡 Network Information</h3>
+                            <p>The App scans for and connects to WiFi networks with names matching the pattern "MM-XX-XX-XX-XX-XX-XX" to identify Mesquite Mocap dongles. WiFi network information is:</p>
+                            <ul class="data-list">
+                                <li>✓ Used only to establish connection with Mesquite hardware</li>
+                                <li>✓ Never stored or transmitted to third parties</li>
+                                <li>✓ Deleted when the app is closed</li>
+                            </ul>
+                        </div>
 
-        <h2>Data Storage</h2>
-        <p>The App does not store any data persistently on your device. All sensor data is processed in real-time and discarded after transmission to the connected hardware.</p>
+                        <div class="privacy-section">
+                            <h3>✋ No Personal Information Collection</h3>
+                            <p>The App does <strong>NOT</strong> collect, store, or transmit any personal information including:</p>
+                            <ul class="data-list">
+                                <li>✗ Names, email addresses, or contact information</li>
+                                <li>✗ Location data outside of the local tracking session</li>
+                                <li>✗ User accounts or profiles</li>
+                                <li>✗ Analytics or usage statistics</li>
+                                <li>✗ Advertising identifiers</li>
+                            </ul>
+                        </div>
 
-        <h2>Third-Party Services</h2>
-        <p>The App does not integrate with any third-party services, analytics platforms, or advertising networks.</p>
+                        <h2>Data Storage</h2>
+                        <div class="info-box">
+                            <p>The App does not store any data persistently on your device. All sensor data is processed in real-time and discarded after transmission to the connected hardware.</p>
+                        </div>
 
-        <h2>Children's Privacy</h2>
-        <p>The App does not knowingly collect information from children under 13. The App is designed for professional and educational use in motion capture applications.</p>
+                        <h2>Third-Party Services</h2>
+                        <div class="info-box">
+                            <p>The App does not integrate with any third-party services, analytics platforms, or advertising networks.</p>
+                        </div>
 
-        <h2>Security</h2>
-        <p>Sensor data transmitted to Mesquite.cc hardware uses local WiFi networks. Users should ensure their WiFi network is secured with appropriate passwords. The default Mesquite dongle password is provided in user documentation and should be changed for security.</p>
+                        <h2>Children's Privacy</h2>
+                        <div class="info-box">
+                            <p>The App does not knowingly collect information from children under 13. The App is designed for professional and educational use in motion capture applications.</p>
+                        </div>
 
-        <h2>Changes to This Policy</h2>
-        <p>We may update this privacy policy from time to time. Changes will be posted at this URL with an updated "Last Updated" date.</p>
+                        <h2>Security</h2>
+                        <p>Sensor data transmitted to Mesquite Mocap dongle uses local WiFi networks. Users should ensure their WiFi network is secured with appropriate passwords. The default Mesquite dongle password is provided in user documentation and should be changed for security.</p>
 
-        <h2>Contact Us</h2>
-        <p>For questions about this privacy policy or the App's data practices, contact:</p>
-        <p>
-            <strong>Foxy Ninja Studios</strong><br>
-            <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
-        </p>
-        <p>For information about Mesquite.cc hardware and services:</p>
-        <p>
-            Mesquite.cc, LLC<br>
-            <a href="https://mesquite.cc">https://mesquite.cc</a>
-        </p>
-    </main>
+                        <h2>Changes to This Policy</h2>
+                        <p>We may update this privacy policy from time to time. Changes will be posted at this URL with an updated "Last Updated" date.</p>
+
+                        <h2 id="contact">Contact Us</h2>
+                        <p>For questions about this privacy policy or the App's data practices, contact:</p>
+                        
+                        <div class="contact-box">
+                            <h3>Foxy Ninja Studios</h3>
+                            <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
+                        </div>
+
+                        <div class="contact-box">
+                            <h3>Mesquite.cc, LLC</h3>
+                            <a href="https://mesquite.cc">https://mesquite.cc</a>
+                        </div>
+                    </div>
+
+                    <aside class="sidebar">
+                        <div class="sidebar-box">
+                            <h3>Quick Links</h3>
+                            <ul class="resource-links">
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/support">Support</a></li>
+                                <li><a href="https://mesquite.cc">Mesquite.cc</a></li>
+                                <li><a href="https://github.com/Mesquite-Mocap">GitHub</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-box privacy-highlight">
+                            <h3>🔒 Your Privacy</h3>
+                            <p>Mesquite Root is designed with privacy-first principles. No personal data is collected or shared with third parties.</p>
+                        </div>
+
+                        <div class="sidebar-box">
+                            <h3>📞 Questions?</h3>
+                            <p>Have questions about your privacy?</p>
+                            <a href="mailto:contact@foxyninjastudios.com" class="cta-button-secondary">Get in Touch</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
 
     <footer>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/support">Support</a>
-            <a href="https://mesquite.cc">Mesquite.cc</a>
-        </nav>
-        <p>&copy; 2025 Foxy Ninja Studios. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Mesquite Root</h4>
+                <p>Professional motion capture positioning for iOS.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <nav class="footer-nav">
+                    <a href="/">Home</a>
+                    <a href="/support">Support</a>
+                    <a href="/privacy">Privacy Policy</a>
+                    <a href="https://mesquite.cc">Mesquite.cc</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <a href="mailto:contact@foxyninjastudios.com">contact@foxyninjastudios.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foxy Ninja Studios. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
